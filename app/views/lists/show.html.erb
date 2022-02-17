@@ -1,0 +1,16 @@
+<div class="card-trip">
+  <div class="card-trip-infos">
+    <div>
+      <h1><%= @list.name%></h1>
+      <br>
+      <h2>Name: </h2>
+      <p><%= @list.name%></p>
+    </div>
+  </div>
+</div>
+<div>
+    <%= link_to "Create a new bookmark", new_list_bookmark_path(@list) %>
+</div>
+<div>
+    <a class="btn btn-success" href="/lists">Back to lists</a>
+</div>
