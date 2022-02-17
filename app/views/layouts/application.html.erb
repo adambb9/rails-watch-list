@@ -11,6 +11,30 @@
   </head>
 
   <body>
+    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item active">
+            <%= link_to "Home", lists_path, class: "nav-link" %>
+            <%= link_to 'Create New List', new_list_path, class: "nav-link"%>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3125&q=80);">
+      <div class="container">
+        <h1>Movie Master</h1>
+        <p>Make a collection of your favourite movies</p>
+      </div>
+    </div>
+
     <div class="container">
       <div class="row">
         <div class="col-md-8 offset-md-2">

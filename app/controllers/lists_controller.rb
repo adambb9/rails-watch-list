@@ -21,10 +21,6 @@ class ListsController < ApplicationController
     end
   end
 
-  def bookmarks
-    @bookmarks = Bookmark.where(:list_id)
-  end
-
   private
 
   def list_params
