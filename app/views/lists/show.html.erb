@@ -3,14 +3,21 @@
     <div>
       <h1><%= @list.name%></h1>
       <br>
-      <h2>Name: </h2>
-      <p><%= @list.name%></p>
+      <h2>Movies: </h2>
+      <% @list.bookmarks.each do |bookmark| %>
+        <div class="card-trip">
+          <div class="card-trip-infos">
+            <h2><%= bookmark.comment %></h2>
+          </div>
+          </div>
+          <% end %>
+
     </div>
   </div>
 </div>
 <div>
-    <%= link_to "Create a new bookmark", new_list_bookmark_path(@list) %>
+    <%= link_to "Create a new bookmark", new_list_bookmark_path(@list), class:"btn btn-success"%>
 </div>
 <div>
-    <a class="btn btn-success" href="/lists">Back to lists</a>
+    <a class="btn btn-primary" href="/lists">Back to lists</a>
 </div>
