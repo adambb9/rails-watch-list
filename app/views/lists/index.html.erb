@@ -1,0 +1,15 @@
+<h1>Your Lists</h1>
+<br>
+  <div class="cards">
+        <% @lists.each do |list| %>
+          <div class="card-trip">
+            <img src="https://images.unsplash.com/photo-1644292954519-dd04b8fc08a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" />
+            <div class="card-trip-infos">
+              <div>
+                <h3><%= link_to list.name, list_path(list) %></h3>
+            </div>
+          </div>
+          <% end %>
+    </div>
+<br>
+<%= link_to 'Create New List', new_list_path, class: "btn btn-primary"%>
