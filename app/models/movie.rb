@@ -1,8 +1,6 @@
 class Movie < ApplicationRecord
   has_many :bookmarks
-  #attr_accessor :title, :overview, :poster_url, :rating
 
-  validates :title, :overview, presence: true
-  validates :title, uniqueness: true
-  validates_associated :bookmarks
+  validates :title, presence: true, uniqueness: true
+  validates :overview, presence: true
 end
